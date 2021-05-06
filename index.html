@@ -14,20 +14,60 @@
 
     <!--Cool mouse effect-->
     <div class="cursor-effect"></div>
+    <div class="preloader">
 
+    </div>
 
-    <!-- Home Section -->
-    <section class="home">
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h2>Mitolu<span>.</span></h2>
+        </div>
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="landing-text">
+            <h1>Israel Mitolu</h1>
+            <h6>UI | UX Designer and Front-End Web Developer</h6>
+        </div>
+        <a href="#" class="scrolldown">
+            <div class="mouse">
+                <span></span>
+            </div>
+            <div class="arrow">
+                <span></span>
+            </div>
+        </a>
+    </header>
+
+    
+    <!-- About Section -->
+    <section class="about" id="about">
         <div class="container">
-            <div class="row min-vh-100">
-                <div class="home-content">
-                    <img src="assets/img/profile.png" alt="profile image">
-                    <p>FRONT-END DEVELOPER</p>
-                    <h1>I curate experiences with technology.</h1>
-                    <div class="home-cta">
-                        <a href="#" class="about-cta">About Me</a>
-                        <a href="#" class="projects-cta">My Projects</a>
-                    </div>
+            <div class="profile-img">
+                <img src="./assets/img/profile.jpg" alt="Israel Oyetunji Mitolu">
+            </div>
+            <div class="about-content">
+                <div class="about-heading">
+                    <h1>About</h1>
+                    <h6>Moi</h6>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, adipisci! Ex in blanditiis minus quo porro, itaque dicta quibusdam necessitatibus. Exercitationem harum ullam provident, rerum qui quos soluta est deserunt!</p>
+                <div class="about-cta">
+                    <a href="#" class="skills-cta">Skills</a>
+                    <span>—</span>
+                    <a href="#" class="exp-cta">Experience</a>
                 </div>
             </div>
         </div>
@@ -44,8 +84,8 @@
             </div>
             <div class="row">
                 <div class="portfolio-filter">
-                    <button type="button" class="portfolio-filter-btn" title="Show All" data-filter="all">All</button>
-                    <button type="button" class="portfolio-filter-btn active" title="Filter Front-End" data-filter="front-end">Front-End</button>
+                    <button type="button" class="portfolio-filter-btn active" title="Show All" data-filter="all">All</button>
+                    <button type="button" class="portfolio-filter-btn" title="Filter Front-End" data-filter="front-end">Front-End</button>
                     <button type="button" class="portfolio-filter-btn " title="Filter Design" data-filter="design">Design</button>
                     <button type="button" class="portfolio-filter-btn " title="Filter Photography" data-filter="photography">Photography</button>
                     <button type="button" class="portfolio-filter-btn " title="Filter Archived" data-filter="archived">Archived</button>
@@ -179,33 +219,7 @@
                     <button type="button" class="btn toggle-contact-form">Say Hi 👋</button>
                 </div>
 
-                <!-- contact Popup -->
-                <div class="contact-form">
-                    <div class="contact-form-inner">
-                        <div class="contact-form-container">
-                            <button type="button" class="close-btn toggle-contact-form-btn"></button>
-                            <form action="get">
-                                <div class="row">
-                                    <div class="input-group">
-                                        <input type="text" class="input-control" placeholder="Your Name">
-                                    </div>
-                                    <div class="input-group">
-                                        <input type="email" class="input-control" placeholder="Your email address">
-                                    </div>
-                                    <div class="input-group">
-                                        <textarea placeholder="Hi Israel, I have a project for you to work on..." class="input-control"></textarea>
-                                    </div>
-                                    <div class="input-group">
-                                        <button type="submit" class="btn btn-submit">
-                                            Send
-                                        </button>
-                                    </div>
-                                    
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>

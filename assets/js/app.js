@@ -14,8 +14,8 @@ bgAnimationDots();
 
 // Cool Mouse effect
 let mouseCursor = document.querySelector('.cursor-effect');
-let ctaLinks = document.querySelectorAll('.home-cta a');
-
+let ctaLinks = document.querySelectorAll('.about-cta a');
+let invertText = document.querySelectorAll('h1')
 window.addEventListener('mousemove', cursor);
 
 function cursor(e){
@@ -33,7 +33,15 @@ ctaLinks.forEach(link =>{
         link.classList.remove('hovered-link')
     })
 })
-
+invertText.forEach(text =>{
+    text.addEventListener('mouseover', ()=>{
+        link.classList.add('hovered-link');
+    });
+    text.addEventListener('mouseleave', ()=>{
+        mouseCursor.classList.remove('link-grow');
+        link.classList.remove('hovered-link')
+    })
+})
 
 
 //Toggle Body Scroll
@@ -41,6 +49,13 @@ function toggleBodyScrolling(){
     document.body.classList.toggle("hide-scrolling");
 }
 
+// Toggle Bars
+let menuToggle = document.querySelector('.menu-toggler');
+let topNav = document.querySelector(".top-nav")
+menuToggle.addEventListener ('click', ()=>{
+    menuToggle.classList.toggle("open");
+    topNav.classList.toggle("open");
+})
 
 //Filter Portfolio items
 const filterBtnsContainer = document.querySelector(".portfolio-filter");
@@ -78,11 +93,3 @@ function filterItems(filterBtn){
 
 //Filter Active Category Portfolio items
 filterItems(document.querySelector(".portfolio-filter-btn.active"));
-
-//Toggle Contact Form
-document.addEventListener('click', (e)=>{
-    if(e.target.classList.contains("toggle-contact-form-btn")){
-        document.querySelector(".contact-form").classList.toggle("open");
-        toggleBodyScrolling();
-    }
-});
