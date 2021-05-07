@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.min.css">
     <link rel="stylesheet" href="./assets/css/responsive.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎈</text></svg>">
+
     <title>Israel Mitoluwanimi</title>
 </head>
 <body>
@@ -13,11 +15,22 @@
         <div class="bg-animation-effect"></div>
     <!-- Background Animation ends -->
 
-    <!--Cool mouse effect-->
+    <!--mouse custom-->
     <div class="cursor-effect"></div>
-    <div class="preloader">
-
+    <div class="intro">
+        <div class="intro-text">
+            <h4 class="hide">
+                <span class="text">Developer 🚀</span>
+            </h4>
+            <h4 class="hide">
+                <span class="text">Designer 👨‍💻</span>
+            </h4>
+            <h4 class="hide">
+                <span class="text">Artsy 🎨</span>
+            </h4>
+        </div>
     </div>
+    <div class="slider"></div>
 
     <!-- Header Section -->
     <header>
@@ -33,8 +46,8 @@
             <ul class="nav-list">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#social" class="nav-link">Social</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
@@ -57,12 +70,11 @@
     <section class="about" id="about">
         <div class="container">
             <div class="profile-img">
-                <img src="./assets/img/2." alt="Israel Oyetunji Mitolu">
+                <img src="./assets/img/2.png" alt="Israel Oyetunji Mitolu">
             </div>
             <div class="about-content">
                 <div class="about-heading">
                     <h1>About</h1>
-                    <h6>Moi</h6>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, adipisci! Ex in blanditiis minus quo porro, itaque dicta quibusdam necessitatibus. Exercitationem harum ullam provident, rerum qui quos soluta est deserunt!</p>
                 <div class="about-cta">
@@ -76,11 +88,11 @@
 
 
     <!-- Portfolio Section -->
-    <section class="portfolio section-pd">
+    <section class="portfolio section-pd" id="projects">
         <div class="container">
             <div class="row">
                 <div class="section-title">
-                    <h2>Featured Projects  <span class="title-icon">💻</span></h2>
+                    <h2>Projects  <span class="title-icon">💻</span></h2>
                 </div>
             </div>
             <div class="row">
@@ -226,9 +238,9 @@
     </section>
 
 
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous"></script>
     <script src="./assets/js/app.js"></script>
 </body>
 </html>
