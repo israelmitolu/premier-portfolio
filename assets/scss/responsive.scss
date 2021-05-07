@@ -1,0 +1,53 @@
+@media screen and (max-width: 768px) {
+  header {
+    .landing-text {
+      h1 {
+        font-size: 8rem;
+      }
+      h6 {
+        font-size: 0.8rem;
+      }
+    }
+    .nav-list {
+      margin-top: 2.5rem;
+      flex-direction: column;
+      li {
+        margin: 1rem 0;
+        .nav-link {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .about-heading {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-toggler {
+    top: 1rem;
+    right: 1rem;
+  }
+  .about {
+    .container {
+      flex-direction: column;
+      .profile-img {
+        margin: 0 0 4rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header {
+    .landing-text {
+      flex-direction: column;
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+}

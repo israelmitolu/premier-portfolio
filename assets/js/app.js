@@ -15,7 +15,7 @@ bgAnimationDots();
 // Cool Mouse effect
 let mouseCursor = document.querySelector('.cursor-effect');
 let ctaLinks = document.querySelectorAll('.about-cta a');
-let invertText = document.querySelectorAll('h1')
+let invertText = document.querySelectorAll('h2,p')
 window.addEventListener('mousemove', cursor);
 
 function cursor(e){
@@ -33,15 +33,18 @@ ctaLinks.forEach(link =>{
         link.classList.remove('hovered-link')
     })
 })
-invertText.forEach(text =>{
-    text.addEventListener('mouseover', ()=>{
-        link.classList.add('hovered-link');
-    });
-    text.addEventListener('mouseleave', ()=>{
-        mouseCursor.classList.remove('link-grow');
-        link.classList.remove('hovered-link')
-    })
-})
+// invertText.forEach(text =>{
+//     text.addEventListener('mouseover', ()=>{
+//         text.classList.add('hovered-link');
+//         mouseCursor.classList.add('link-grow');
+
+//     });
+//     text.addEventListener('mouseleave', ()=>{
+//         mouseCursor.classList.remove('link-grow');
+//         text.classList.remove('hovered-link')
+
+//     })
+// })
 
 
 //Toggle Body Scroll

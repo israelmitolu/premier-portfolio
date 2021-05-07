@@ -1,3 +1,4 @@
+@import url(../scss/responsive.scss);
 //Variables
 $mainColor: #ffb703;
 $secondColor: #d62828;
@@ -44,7 +45,7 @@ body {
   color: $white;
   min-height: 100vh;
   max-width: 100%;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: black;
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -210,13 +211,14 @@ header {
     top: 1rem;
     left: 2rem;
     width: 7rem;
-    z-index: 500;
+    z-index: 49;
     background-color: rgba(11, 11, 15, 0.8);
     padding: 0.8rem 1.2rem;
+    user-select: none;
     h2 {
       color: $whiteLight;
       span {
-        color: $white;
+        color: $thirdColor;
       }
     }
   }
@@ -242,7 +244,7 @@ header {
       }
     }
     .bar {
-      background: linear-gradient(to right, $secondColor, $thirdColor);
+      background: linear-gradient(to left, $secondColor, $thirdColor);
       width: 100%;
       height: 2px;
       border-radius: 0.8rem;
@@ -443,7 +445,7 @@ header {
         a {
           font-weight: 800;
           position: relative;
-          color: #00ffba;
+          color: $secondColor;
           &::before {
             position: absolute;
             content: "";
@@ -459,7 +461,7 @@ header {
           }
         }
         .exp-cta {
-          color: #f72d00;
+          color: $thirdColor;
           margin-left: 10px;
         }
       }
@@ -580,15 +582,11 @@ header {
       max-width: 100%;
     }
   }
-  .portfolio-item-details {
-    display: none;
-  }
   .portfolio-item-title {
     font-size: 20px;
     margin: 10px 0 5px;
   }
 }
-
 ///Contact Form
 .contact {
   &.active {
