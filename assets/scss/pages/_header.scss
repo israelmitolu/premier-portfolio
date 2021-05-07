@@ -1,0 +1,197 @@
+@import url("variables.scss");
+@import url("animation_effects.scss");
+@import url("resets_globals.scss");
+@import url("responsive.scss");
+
+header {
+  width: 100%;
+  height: 100vh;
+  .logo {
+    position: fixed;
+    top: 1rem;
+    left: 2rem;
+    width: 7rem;
+    z-index: 49;
+    background-color: rgba(11, 11, 15, 0.8);
+    padding: 0.8rem 1.2rem;
+    user-select: none;
+    h2 {
+      color: $whiteLight;
+      span {
+        color: $thirdColor;
+      }
+    }
+  }
+  .menu-toggler {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 500;
+    transition: transform 650ms ease-out;
+    &.open {
+      transform: rotate(-45deg);
+      .bar.start {
+        transform: rotate(-450deg) translateX(0.3rem);
+      }
+      .bar.end {
+        transform: rotate(-450deg) translateX(-0.3rem);
+      }
+    }
+    .bar {
+      background: linear-gradient(to left, $secondColor, $thirdColor);
+      width: 100%;
+      height: 2px;
+      border-radius: 0.8rem;
+      &.half {
+        width: 50%;
+      }
+      &.start {
+        transform-origin: right;
+        transition: transform 650ms cubic-bezier(0.54, -0.01, 0.57, 0.57);
+      }
+      &.end {
+        align-self: flex-end;
+        transform-origin: left;
+        transition: transform 650ms cubic-bezier(0.54, -0.01, 0.57, 0.57);
+      }
+    }
+  }
+  .top-nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -100vh;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    transition: all 650ms cubic-bezier(1, 0, 0, 1);
+    z-index: 50;
+    &.open {
+      top: 0;
+      border-radius: initial;
+    }
+    .nav-list {
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        margin: 0 2rem;
+        .nav-link {
+          font-family: "the_historia_demoregular", -apple-system,
+            BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+            "Open Sans", "Helvetica Neue", sans-serif;
+          font-size: 4rem;
+          padding: 1rem;
+          &:hover,
+          &:focus {
+            background: linear-gradient(to top, $mainColor, $secondColor);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  .landing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    h1 {
+      font-size: 10rem;
+      font-family: "the_historia_demoregular", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+      padding: 1rem;
+      background: linear-gradient(to top, $mainColor, $secondColor);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      user-select: none;
+    }
+    h6 {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+  .scrolldown {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 1rem;
+    height: 3.5rem;
+    transform: translateY(-20px) translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .mouse {
+      width: 1.2rem;
+      height: 2.4rem;
+      border: 1px solid $white;
+      border-radius: 2rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      span {
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: white;
+        display: block;
+        border-radius: 50%;
+        margin: auto;
+        animation: pulse-scroll 1s linear infinite;
+      }
+    }
+    .arrow {
+      span {
+        display: block;
+        width: 0.5rem;
+        height: 0.5rem;
+        border: 2px solid transparent;
+        border-right-color: $white;
+        border-bottom-color: $white;
+        transform: rotate(45deg);
+        animation: arrow-scroll 0.5s alternate-reverse infinite;
+      }
+    }
+  }
+}
+@keyframes pulse-scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(-0.6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0.6rem);
+  }
+}
+@keyframes arrow-scroll {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}

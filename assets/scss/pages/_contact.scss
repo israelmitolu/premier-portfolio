@@ -1,0 +1,47 @@
+@import url("variables.scss");
+@import url("animation_effects.scss");
+@import url("resets_globals.scss");
+@import url("responsive.scss");
+.contact {
+  &.active {
+    display: flex;
+  }
+  .contact-content {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    .contact-desc {
+      margin-bottom: 30px;
+    }
+    .contact-info-item {
+      margin-bottom: 12px;
+      p {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .social-links {
+        span {
+          margin-right: 5px;
+        }
+        a {
+          height: 40px;
+          width: 40px;
+          border: 1px solid $whiteLight;
+          font-size: 16px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: $whiteLight;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+          margin: 0 3px;
+          &:hover {
+            color: $mainColor;
+            border-color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+}
