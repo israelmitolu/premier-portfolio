@@ -22,9 +22,6 @@
   .portfolio {
     margin-top: 12rem;
   }
-  .top-nav {
-    top: -200vh !important;
-  }
   .about-heading,
   .services-heading {
     h1 {
@@ -41,6 +38,13 @@
     font-size: 5rem !important;
     padding: 2rem !important;
   }
+  .nav-list {
+    margin-top: -1rem !important;
+    .nav-link {
+      font-size: 3.5rem !important;
+    }
+  }
+
   .menu-toggler {
     top: 1rem;
     right: 1rem;
@@ -55,13 +59,17 @@
   }
   .logo {
     left: 1rem;
-    width: 2rem;
+    width: 5rem !important;
+    padding: 0.6rem 0.3rem !important;
+    h2 {
+      font-size: 1.2rem !important;
+    }
   }
   .project {
     padding: 4em !important;
   }
   .contact .container {
-    padding: 120px 40px 20px !important;
+    padding: 0px 20px !important;
     form {
       width: 100% !important;
       min-width: 0 !important;
@@ -78,13 +86,20 @@
     }
   }
   .sub {
-    font-size: 12px !important;
+    font-size: 0.9rem !important;
+    margin: 0px 0 60px !important;
   }
   .about-content p {
     margin-top: 0rem !important;
   }
   .services {
     margin-top: 10rem !important;
+  }
+  .about-content {
+    font-size: 0.9rem !important;
+  }
+  .cursor-effect {
+    display: none;
   }
 }
 
@@ -104,7 +119,7 @@
     font-size: 1.2rem;
   }
   .services-content p,
-  .about-content p {
-    font-size: 0.8rem;
+  .about-content {
+    font-size: 0.7rem;
   }
 }

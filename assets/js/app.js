@@ -56,51 +56,9 @@ menuToggle.addEventListener ('click', ()=>{
 navLink.addEventListener ('click', ()=>{
     menuToggle.classList.toggle("open");
     topNav.classList.toggle("open");
-    console.log("Booyeagh");
 })
-// document.addEventListener('DOMContentLoaded', ()=> {
-// });
 
 
-
-
-
-//Filter Portfolio items
-// const filterBtnsContainer = document.querySelector(".portfolio-filter");
-// filterBtnsContainer.addEventListener("click", (e) =>{
-//     if(e.target.classList.contains("portfolio-filter-btn") &&
-//     !e.target.classList.contains("active")){
-//         filterBtnsContainer.querySelector(".active").classList.remove("active");
-//         e.target.classList.add("active");
-//         toggleBodyScrolling();
-//         document.querySelector(".filter-status").classList.add("active");
-//         document.querySelector(".filter-status p").innerHTML = `Filtering <span>${e.target.innerHTML}</span> works`;
-//         setTimeout(() =>{
-            
-//             filterItems(e.target);
-//         },400);
-//         setTimeout(() =>{
-//             document.querySelector(".filter-status").classList.remove("active");
-//             toggleBodyScrolling();
-//         },800);
-//     };
-// });
-
-// function filterItems(filterBtn){
-//     const selectedCategory = filterBtn.getAttribute("data-filter");
-//     document.querySelectorAll(".portfolio-item").forEach((item)=>{
-//         const category = item.getAttribute("data-category").split(",");
-//         if(category.indexOf(selectedCategory) !== -1 || selectedCategory === "all"){
-//             item.classList.add("show");
-//         }else{
-//             item.classList.remove("show");
-//         }
-    
-//     });
-// }
-
-// //Filter Active Category Portfolio items
-// filterItems(document.querySelector(".portfolio-filter-btn.active"));
 
 //GSAP animations
 const tl = gsap.timeline({

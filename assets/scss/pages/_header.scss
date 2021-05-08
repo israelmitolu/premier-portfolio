@@ -12,6 +12,7 @@ header {
     user-select: none;
     h2 {
       color: $whiteLight;
+      font-size: 1.5rem;
       span {
         color: $thirdColor;
       }
@@ -62,7 +63,7 @@ header {
     height: 100%;
     position: fixed;
     top: -100vh;
-    display: none;
+    opacity: 0.3;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
@@ -71,7 +72,8 @@ header {
     &.open {
       top: 0;
       border-radius: initial;
-      display: block;
+      opacity: 1;
+      transition: all 650ms ease;
     }
     .nav-list {
       list-style: none;

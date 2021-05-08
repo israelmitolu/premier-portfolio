@@ -20,14 +20,15 @@
       flex: 1;
       margin-right: 2.5rem;
       img {
-        max-width: 100%;
         width: 700px;
-        height: 500px;
+        height: auto;
         object-fit: cover;
       }
     }
     .about-content {
       flex: 1;
+      font-size: 1rem;
+
       p {
         margin-top: 5rem;
         text-align: center;
