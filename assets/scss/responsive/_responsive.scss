@@ -18,18 +18,29 @@
         }
       }
     }
-    .about-heading {
-      h1 {
-        font-size: 1rem;
-      }
-    }
   }
   .portfolio {
     margin-top: 12rem;
   }
+  .top-nav {
+    top: -200vh !important;
+  }
+  .about-heading,
+  .services-heading {
+    h1 {
+      font-size: 3rem !important;
+    }
+  }
+  .services {
+    margin-top: 10rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .landing-text h1 {
+    font-size: 5rem !important;
+    padding: 2rem !important;
+  }
   .menu-toggler {
     top: 1rem;
     right: 1rem;
@@ -42,6 +53,39 @@
       }
     }
   }
+  .logo {
+    left: 1rem;
+    width: 2rem;
+  }
+  .project {
+    padding: 4em !important;
+  }
+  .contact .container {
+    padding: 120px 40px 20px !important;
+    form {
+      width: 100% !important;
+      min-width: 0 !important;
+      .input-row {
+        flex-direction: column;
+        .side {
+          width: 100% !important;
+          margin-bottom: 50px;
+        }
+      }
+      .textarea {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .sub {
+    font-size: 12px !important;
+  }
+  .about-content p {
+    margin-top: 0rem !important;
+  }
+  .services {
+    margin-top: 10rem !important;
+  }
 }
 
 @media screen and (max-width: 350px) {
@@ -52,5 +96,15 @@
         font-size: 5rem;
       }
     }
+  }
+  .profile-img {
+    max-width: 400px;
+  }
+  .services-heading {
+    font-size: 1.2rem;
+  }
+  .services-content p,
+  .about-content p {
+    font-size: 0.8rem;
   }
 }

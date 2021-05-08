@@ -1,5 +1,4 @@
 .services {
-  height: 100vh;
   margin-top: 6rem;
   padding: 6rem 3.5rem;
   .services-content {
@@ -26,6 +25,7 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
     .service-item {
       &:hover {
         box-shadow: 2px 2px 30px rgba(246, 246, 246, 0.2);

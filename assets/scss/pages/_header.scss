@@ -62,6 +62,7 @@ header {
     height: 100%;
     position: fixed;
     top: -100vh;
+    display: none;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
@@ -70,6 +71,7 @@ header {
     &.open {
       top: 0;
       border-radius: initial;
+      display: block;
     }
     .nav-list {
       list-style: none;
@@ -116,6 +118,7 @@ header {
       background-clip: text;
       -webkit-text-fill-color: transparent;
       user-select: none;
+      letter-spacing: 5px;
     }
     h6 {
       font-size: 1rem;
