@@ -49,7 +49,7 @@
             left: 0;
             height: 1px;
             width: 0%;
-            background-color: $mainColor;
+            background-color: $secondColor;
             transition: width 0.3s ease;
           }
           &:hover::before {
