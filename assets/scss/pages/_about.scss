@@ -20,18 +20,19 @@
       flex: 1;
       margin-right: 2.5rem;
       img {
-        width: 700px;
+        width: 550px;
         height: auto;
         object-fit: cover;
       }
     }
     .about-content {
       flex: 1;
-      font-size: 1rem;
+      font-size: 0.9rem;
+      line-height: 2;
 
       p {
         margin-top: 5rem;
-        text-align: center;
+        text-align: left;
       }
       .about-cta {
         text-align: center;
