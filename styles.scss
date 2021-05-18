@@ -1,0 +1,15 @@
+//Global stylesheet where files will be imported to
+
+//Variables
+@import "./variables/variables";
+
+//Global styling and components
+@import "./components/components";
+//Fonts
+@import "./fonts/fonts";
+
+//Responsive
+@import "./responsive/responsive";
+
+//Pages
+@import "./pages/pages";
