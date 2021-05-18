@@ -24,7 +24,7 @@
   }
   .about-heading,
   .services-heading {
-    h1 {
+    h2 {
       font-size: 2.5rem !important;
     }
   }
@@ -48,6 +48,8 @@
   .menu-toggler {
     top: 1rem;
     right: 1rem;
+    width: 1.5rem;
+    height: 1rem;
   }
   .about {
     .container {

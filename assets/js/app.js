@@ -2,7 +2,7 @@
 //Getting dom elements
 let mouseCursor = document.querySelector('.cursor-effect'
 );
-let ctaLinks = document.querySelectorAll('.about-cta a');
+let ctaLinks = document.querySelectorAll('.about-content a, .menu-toggler');
 let menuToggle = document.querySelector('.menu-toggler');
 let topNav = document.querySelector(".top-nav");
 let navLink = document.querySelector(".top-nav,open .nav-link");
@@ -33,11 +33,9 @@ function cursor(e){
 ctaLinks.forEach(link =>{
     link.addEventListener('mouseover', ()=>{
         mouseCursor.classList.add('link-grow');
-        link.classList.add('hovered-link');
     });
     link.addEventListener('mouseleave', ()=>{
         mouseCursor.classList.remove('link-grow');
-        link.classList.remove('hovered-link');
     })
 })
 

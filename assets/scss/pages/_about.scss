@@ -1,7 +1,6 @@
 .about {
   margin-top: 13rem;
-  height: 100vh;
-  padding: 6rem 2rem;
+  padding: 6rem 2rem 2rem;
   .container {
     display: flex;
     align-items: center;
@@ -11,8 +10,8 @@
       text-transform: uppercase;
       line-height: 0;
       margin-bottom: 3rem;
-      h1 {
-        font-size: 4.5rem;
+      h2 {
+        font-size: 3rem;
         opacity: 0.8;
         span {
           color: $mainColor;
@@ -46,7 +45,7 @@
         a {
           font-weight: 800;
           position: relative;
-          color: $secondColor;
+          color: lightgreen;
           &::before {
             position: absolute;
             content: "";
@@ -62,7 +61,7 @@
           }
         }
         .exp-cta {
-          color: #fcd1d1;
+          color: lightgoldenrodyellow;
           margin-left: 10px;
         }
       }
