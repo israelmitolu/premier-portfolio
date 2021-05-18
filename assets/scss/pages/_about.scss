@@ -12,8 +12,11 @@
       line-height: 0;
       margin-bottom: 3rem;
       h1 {
-        font-size: 5rem;
-        opacity: 0.3;
+        font-size: 4.5rem;
+        opacity: 0.8;
+        span {
+          color: $mainColor;
+        }
       }
     }
     .profile-img {
@@ -27,7 +30,7 @@
     }
     .about-content {
       flex: 1;
-      font-size: 0.9rem;
+      font-size: 1rem;
       line-height: 2;
 
       p {
@@ -59,7 +62,7 @@
           }
         }
         .exp-cta {
-          color: $thirdColor;
+          color: #fcd1d1;
           margin-left: 10px;
         }
       }

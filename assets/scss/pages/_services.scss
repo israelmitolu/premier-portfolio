@@ -9,15 +9,14 @@
       text-transform: uppercase;
       line-height: 0;
       margin-bottom: 3rem;
-      h1 {
-        font-size: 5rem;
-        opacity: 0.3;
+      h2 {
+        font-size: 3.5rem;
+        opacity: 0.9;
+        margin: 1rem 0 6rem;
+        span {
+          color: $mainColor;
+        }
       }
-    }
-    p {
-      font-weight: 300;
-      font-size: 0.9rem;
-      margin: 4rem 0;
     }
   }
   .service-item-container {
@@ -29,7 +28,7 @@
     flex-wrap: wrap;
     .service-item {
       &:hover {
-        box-shadow: 2px 2px 30px rgba(246, 246, 246, 0.2);
+        box-shadow: inset 6px 6px 30px rgba(246, 246, 246, 0.2);
         transition: all 0.3s ease;
       }
       display: flex;
@@ -46,15 +45,15 @@
       img {
         height: 75px;
       }
-      h4 {
+      h5 {
         color: $whiteLight;
         letter-spacing: 1px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin: 8px 0;
       }
       p {
         color: $whiteLight;
-        font-size: 1rem;
+        font-size: 0.95rem;
       }
       .service-item-border {
         width: 100px;
@@ -63,7 +62,7 @@
         left: 50%;
         top: 0px;
         transform: translateX(-50%);
-        background-color: #4a90e2;
+        background-color: $mainColor;
         border-radius: 0px 0px 10px 10px;
       }
     }
