@@ -31,13 +31,9 @@ body {
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
   cursor: grab;
-  .hide-scrolling {
-    overflow-y: hidden;
-  }
-}
-html {
   scroll-behavior: smooth;
 }
+
 a {
   text-decoration: none;
   color: $secondColor;
@@ -62,6 +58,10 @@ button {
 }
 
 //Section styling
+section {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
 .section-title {
   padding: 0 15px;
   width: 100%;

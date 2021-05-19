@@ -10,47 +10,6 @@
   background-color: $mainColor;
 }
 
-//Bg animation effect
-.bg-animation-effect {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -5;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-evenly;
-  div {
-    height: 4px;
-    width: 4px;
-    background-color: $darkLight;
-    margin-left: calc((100% -40px) / 11);
-    border-radius: 50%;
-    &:nth-child(even) {
-      animation: evenItems 9s linear infinite;
-    }
-    @keyframes evenItems {
-      0% {
-        transform: translateY(0vh);
-      }
-      100% {
-        transform: translateY(12.5vh);
-      }
-    }
-    &:nth-child(odd) {
-      animation: oddItems 8s linear infinite;
-    }
-    @keyframes oddItems {
-      0% {
-        transform: translateY(0vh);
-      }
-      100% {
-        transform: translateY(-12.5vh);
-      }
-    }
-  }
-}
 //Cursor Effects
 .cursor-effect {
   width: 2rem;
@@ -74,7 +33,7 @@
 
 //GSAP Preloader
 .intro {
-  background: $darkLight;
+  background: $dark;
   position: fixed;
   top: 0;
   left: 0;
@@ -86,7 +45,7 @@
   z-index: 1000;
 }
 .slider {
-  background: #c0d6f0;
+  background: $secondColor;
   position: fixed;
   top: 0;
   left: 0;
@@ -102,11 +61,104 @@
   line-height: 1.8;
 }
 .hide {
-  background: $darkLight;
+  background: $dark;
   overflow: hidden;
 }
 .hide span {
   transform: translateY(100%);
   display: inline-block;
   color: $whiteLight;
+  background: -webkit-linear-gradient(white, $darkLight);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+///////Glow
+.glow {
+  position: fixed;
+  max-width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  transform-origin: right;
+  animation: colorChange 5s linear infinite;
+  &:nth-child(even) {
+    transform-origin: bottom;
+  }
+  span {
+    position: absolute;
+    top: calc(50px * var(--i));
+    left: calc(50px * var(--i));
+    bottom: calc(50px * var(--i));
+    right: calc(50px * var(--i));
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -8px;
+      width: 3px;
+      height: 3px;
+      background: #f00;
+      border-radius: 50%;
+    }
+    &:nth-child(3n + 1)::before {
+      background: rgba(134, 255, 0, 1);
+      box-shadow: 0 0 20px rgba(134, 255, 0, 1), 0 0 40px rgba(134, 255, 0, 1),
+        0 0 60px rgba(134, 255, 0, 1), 0 0 80px rgba(134, 255, 0, 1),
+        0 0 0 8px rgba(134, 255, 0, 1);
+    }
+    &:nth-child(3n + 2)::before {
+      background: rgba(255, 214, 0, 1);
+      box-shadow: 0 0 20px rgba(255, 214, 0, 1), 0 0 40px rgba(255, 214, 0, 1),
+        0 0 60px rgba(255, 214, 0, 1), 0 0 80px rgba(255, 214, 0, 1),
+        0 0 0 8px rgba(255, 214, 0, 1);
+    }
+    &:nth-child(3n + 3)::before {
+      background: rgba(0, 226, 255, 1);
+      box-shadow: 0 0 20px rgba(0, 226, 255, 1), 0 0 40px rgba(0, 226, 255, 1),
+        0 0 60px rgba(0, 226, 255, 1), 0 0 80px rgba(0, 226, 255, 1),
+        0 0 0 8px rgba(0, 226, 255, 1);
+    }
+    &:nth-child(3n + 1) {
+      animation: animate 10s alternate infinite;
+      animation-delay: 5s;
+    }
+    &:nth-child(3n + 2) {
+      animation: animate-reverse 15s alternate infinite;
+      animation-delay: 5s;
+    }
+    &:nth-child(3n + 3) {
+      animation: animate-reverse 12s alternate infinite;
+      animation-delay: 5s;
+    }
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

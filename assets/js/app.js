@@ -8,20 +8,6 @@ let topNav = document.querySelector(".top-nav");
 let navLink = document.querySelector(".top-nav,open .nav-link");
 
 
-//Background animation effect
-function bgAnimationDots(){
-    const rows = 7, cols = 10;
-    for(let i = 0; i < rows; i++){
-        for(let j = 0; j< cols; j++){
-            const div = document.createElement("div");
-            div.className = `col-${j+1}`;
-            document.querySelector(".bg-animation-effect").appendChild(div);
-        }
-        }
-}
-
-bgAnimationDots();
-
 //  Mouse effect
 window.addEventListener('mousemove', cursor);
 
@@ -42,9 +28,9 @@ ctaLinks.forEach(link =>{
 
 
 //Toggle Body Scroll
-function toggleBodyScrolling(){
-    document.body.classList.toggle("hide-scrolling");
-}
+// function toggleBodyScrolling(){
+//     document.body.classList.toggle("hide-scrolling");
+// }
 
 // Toggle menu
 menuToggle.addEventListener ('click', ()=>{
@@ -63,8 +49,9 @@ const tl = gsap.timeline({
     defaults: { ease: "power1.out" }
 });
 
-tl.to('.text', { y: "0%", duration: 1, stagger: 0.25 });
+tl.to('.text', { y: "0%", duration: 1, stagger: 0.1 });
 tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
 tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 
-
+tl.fromTo('.landing-text h6', {opacity: 0}, {opacity: 1, duration:1});
+tl.fromTo('.landing-text h1', {opacity: 0}, {opacity: 1, duration:1}, "-=.8");

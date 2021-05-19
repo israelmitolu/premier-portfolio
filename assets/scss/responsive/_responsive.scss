@@ -31,6 +31,9 @@
   .services {
     margin-top: 10rem;
   }
+  .footer-links:nth-child(1) {
+    margin-right: 5em !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -102,6 +105,10 @@
   }
   .cursor-effect {
     display: none;
+  }
+  .footer-links:nth-child(1) {
+    margin-bottom: 5em;
+    margin-right: -8em !important;
   }
 }
 
