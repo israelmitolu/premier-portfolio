@@ -7,18 +7,11 @@ header {
     position: fixed;
     top: 1rem;
     left: 2rem;
-    width: 7rem;
+    width: 4rem;
     z-index: 49;
-    background-color: rgba(11, 11, 15, 0.8);
-    padding: 0.8rem 1.2rem;
+    background-color: rgba(11, 11, 15, 0.7);
+    padding: 0.3rem;
     user-select: none;
-    h2 {
-      color: $whiteLight;
-      font-size: 1.5rem;
-      span {
-        color: $thirdColor;
-      }
-    }
   }
   .menu-toggler {
     position: fixed;
@@ -130,7 +123,7 @@ header {
   .scrolldown {
     position: absolute;
     left: 50%;
-    bottom: 20px;
+    bottom: -5%;
     width: 1rem;
     height: 3.5rem;
     transform: translateY(-20px) translateX(-50%);

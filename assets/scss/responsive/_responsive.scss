@@ -23,9 +23,10 @@
     margin-top: 12rem;
   }
   .about-heading,
-  .services-heading {
+  .services-heading,
+  .contact-title {
     h2 {
-      font-size: 2.5rem !important;
+      font-size: 2rem !important;
     }
   }
   .services {
@@ -49,7 +50,7 @@
   }
 
   .menu-toggler {
-    top: 1rem;
+    top: 2.2rem;
     right: 1rem;
     width: 1.5rem;
     height: 1rem;
@@ -63,8 +64,9 @@
     }
   }
   .logo {
+    top: 2.2rem;
     left: 1rem;
-    width: 5rem !important;
+    width: 4rem !important;
     padding: 0.6rem 0.3rem !important;
     h2 {
       font-size: 1.2rem !important;
@@ -108,7 +110,7 @@
   }
   .footer-links:nth-child(1) {
     margin-bottom: 5em;
-    margin-right: -8em !important;
+    margin-right: -6em !important;
   }
 }
 
