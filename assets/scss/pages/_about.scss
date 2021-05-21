@@ -45,7 +45,7 @@
         a {
           font-weight: 800;
           position: relative;
-          color: lightgreen;
+          color: #06d79c;
           &::before {
             position: absolute;
             content: "";
@@ -61,7 +61,7 @@
           }
         }
         .exp-cta {
-          color: lightcoral;
+          color: #fb839e;
           margin-left: 10px;
         }
       }

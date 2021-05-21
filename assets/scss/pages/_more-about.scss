@@ -1,0 +1,147 @@
+.more-about {
+  padding: 2rem 3.5rem;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-size: 1rem;
+  color: $whiteLight;
+  h2 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin: 2rem 0 5rem;
+    span {
+      color: $mainColor;
+    }
+  }
+  container,
+  &-content {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &-img {
+    width: 40%;
+    height: auto;
+    padding: 0 15px;
+    max-width: 400px;
+  }
+  &-text {
+    width: 60%;
+    padding: 0 15px;
+    h3 {
+      font-size: 1.2rem;
+      margin: 1.5rem 0;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      .skill-item {
+        background: rgba($color: $dark, $alpha: 0.26);
+        border: 1px solid $mainColor;
+        padding: 5px 15px;
+        margin: 0 10px 10px 0;
+        border-radius: 20px;
+      }
+    }
+    .tabs {
+      margin-top: 4rem;
+      .tab-item {
+        padding: 2px;
+        background-color: transparent;
+        border: none;
+        display: inline-block;
+        color: $thirdColor;
+        font-size: 1.2rem;
+        cursor: crosshair;
+        font-weight: 500;
+        font-family: inherit;
+        user-select: none;
+        margin-right: 30px;
+        position: relative;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+
+        &:last-child {
+          margin: 0;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0%;
+          height: 1px;
+          background-color: $thirdColor;
+          transition: width 0.3s ease;
+        }
+        &:hover::before {
+          width: 100%;
+        }
+        &.active {
+          color: $mainColor;
+          opacity: 1;
+          cursor: crosshair;
+
+          cursor: auto;
+          &::before {
+            width: 100%;
+            background-color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-content {
+  padding: 40px 0;
+  .timeline {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      top: 0;
+      left: 5px;
+      background-color: $mainColor;
+    }
+    &-item {
+      margin-bottom: 30px;
+      position: relative;
+      padding: 10px 0 0 40px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 11px;
+        width: 11px;
+        background-color: $mainColor;
+        left: 0;
+        top: 16px;
+        border-radius: 50%;
+      }
+
+      .date {
+        display: block;
+        color: $mainColor;
+        font-weight: 400;
+        margin: 0 0 10px;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        margin: 0 10px;
+
+        span {
+          font-weight: 400;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

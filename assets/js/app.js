@@ -2,7 +2,7 @@
 //Getting dom elements
 let mouseCursor = document.querySelector('.cursor-effect'
 );
-let ctaLinks = document.querySelectorAll('.about-content a, .menu-toggler');
+let ctaLinks = document.querySelectorAll('.about-content a');
 let menuToggle = document.querySelector('.menu-toggler');
 let topNav = document.querySelector(".top-nav");
 let navLink = document.querySelector(".top-nav,open .nav-link");
