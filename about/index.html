@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/styles.min.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+
     <!-- Primary Meta Tags -->
     <title>Israel Mitolu | Front-End Web Developer and Designer</title>
     <meta name="title" content="Israel Mitolu | Front-End Web Developer and Designer">
@@ -27,13 +28,30 @@
 
 </head>
 <body>
-    <!-- custom mouse-->
-    <div class="cursor-effect"></div>
+    <div class="mouse-cursor"></div>
 
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="lds-ellipsis">
+                LOADING...
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="../index.html" class="logo">
+        <img src="../assets/img/favicon.svg" alt="">
+    </a>
     <section class="more-about">
         <div class="container">
             <div class="section-title">
-                <h2>About <span>me</span></h2>
+                <!-- <h2>About <span>me</span></h2> -->
+                <h2>Israel <span>Mitolu</span>.</h2>
             </div>
             <div class="more-about-content">
                 <div class="more-about-img">
@@ -41,7 +59,7 @@
                 </div>
                 <div class="more-about-text">
                     <p>Hi, I'm Israel Oyetunji, mostly known as Israel Mitolu ^_^, a passionate self-taught Front-End web developer from Nigeria, currently working with an amazing team as a Front-End Engineer building <a href="https://landing-jomail.netlify.app" target="_blank">Jomail</a>. I love to build user-friendly websites that look visually appealing, with nice and fluid interactions, and are accessible to the visually impaired (Web Accessibility Advocate)<br><br>
-                        I develop websites with HTML, CSS and JavaScript and I'm currently learning Reactjs.</p>
+                        In my spare time, I love to listen to and play some neo-jazz on the guitar 🎸, do pushups 💪, and take nature pictures 🌼🌻</p>
 
                     <h3>Skills</h3>
                     <div class="skills">
@@ -55,37 +73,72 @@
                     </div>
 
                     <div class="tabs">
-                        <button type="button" class="tab-item active" data-target="#education">Education</button>
-                        <button type="button" class="tab-item" data-target="#experience">Experience</button>
+                        <button type="button" class="tab-item active" data-target="#experience">Experience</button>
+                        <button type="button" class="tab-item" data-target="#education">Education</button>
                     </div>
 
+                    <!-- Experience -->
+                    <div class="tab-content active" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="date">2020-2021
+                                </span>
+                                <h4>Front-End Engineer - <span>Jomail</span></h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis sed saepe quas nobis numquam voluptates odio modi blanditiis aut</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">2019-2020
+                                </span>
+                                <h4>UX Developer - <span>Centerfield Labs</span></h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis sed saepe quas nobis numquam voluptates odio modi blanditiis aut</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">2018-2022
+                                </span>
+                                <h4>Front-End Developer - <span>Afrosteak</span></h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis sed saepe quas nobis numquam voluptates odio modi blanditiis aut</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">2018-2022
+                                </span>
+                                <h4>Graphics Designer -<span> Kings Court</span></h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis sed saepe quas nobis numquam voluptates odio modi blanditiis aut</p>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Education -->
                     <div class="tab-content" id="education">
                         <div class="timeline">
                             <div class="timeline-item">
                                 <span class="date">2018-2022
                                 </span>
-                                <h4>BSc. - Obafemi Awolowo University</h4>
+                                <h4>BSc. - <span>Obafemi Awolowo University</span></h4>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis sed saepe quas nobis numquam voluptates odio modi blanditiis aut</p>
                             </div>
                             <div class="timeline-item">
                                 <span class="date">2018-2022
                                 </span>
-                                <h4>BSc. - Obafemi Awolowo University</h4>
+                                <h4>BSc. - <span>Obafemi Awolowo University</span></h4>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis sed saepe quas nobis numquam voluptates odio modi blanditiis aut</p>
                             </div>
                             <div class="timeline-item">
                                 <span class="date">2018-2022
                                 </span>
-                                <h4>BSc. - Obafemi Awolowo University</h4>
+                                <h4>BSc. - <span>Obafemi Awolowo University</span></h4>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis sed saepe quas nobis numquam voluptates odio modi blanditiis aut</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#" class="skills-cta">My resume</a>
+                        <span>—</span>
+                        <a href="../index.html#contact" class="exp-cta">Contact me</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <script src="../assets/js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="about.js"></script>
 </body>
