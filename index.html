@@ -8,41 +8,40 @@
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
 
     <!-- Primary Meta Tags -->
-    <title>Israel Mitolu | Front-End Web Developer and Designer</title>
-    <meta name="title" content="Israel Mitolu | Front-End Web Developer and Designer">
-    <meta name="description" content="Front end Developer and Engineer with a keen eye for aesthetics, focused on designing and building responsive and pixel perfect websites to give your brand the sleek online presence it deserves.">
+    <title>Israel Mitolu | Front-End Web Developer and UI Designer</title>
+    <meta name="title" content="Israel Mitolu | Front-End Web Developer and UI Designer">
+    <meta name="description" content="Front end Developer and Designer with a keen eye for aesthetics, focused on designing and building responsive and pixel perfect websites to give your brand the sleek online presence it deserves.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://israelmitolu.netlify.app/">
-    <meta property="og:title" content="Israel Mitolu | Front-End Web Developer and Designer">
-    <meta property="og:description" content="Front end Developer and Engineer with a keen eye for aesthetics, focused on designing and building responsive and pixel perfect websites to give your brand the sleek online presence it deserves.">
+    <meta property="og:title" content="Israel Mitolu | Front-End Web Developer and UI Designer">
+    <meta property="og:description" content="Front end Developer and Designer with a keen eye for aesthetics, focused on designing and building responsive and pixel perfect websites to give your brand the sleek online presence it deserves.">
     <meta property="og:image" content="./assets/img/seo-img.svg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://israelmitolu.netlify.app/">
-    <meta property="twitter:title" content="Israel Mitolu | Front-End Web Developer and Designer">
-    <meta property="twitter:description" content="Front end Developer and Engineer with a keen eye for aesthetics, focused on designing and building responsive and pixel perfect websites to give your brand the sleek online presence it deserves.">
+    <meta property="twitter:title" content="Israel Mitolu | Front-End Web Developer and UI Designer">
+    <meta property="twitter:description" content="Front end Developer and Designer with a keen eye for aesthetics, focused on designing and building responsive and pixel perfect websites to give your brand the sleek online presence it deserves.">
     <meta property="twitter:image" content="./assets/img/seo-img.svg">
 
 </head>
 <body>
-    <!--GSAP Preloader-->
-    <div class="intro">
-        <div class="intro-text">
-            <h4 class="hide">
-                <span class="text">Developer,</span>
-            </h4>
-            <h4 class="hide">
-                <span class="text">Designer,</span>
-            </h4>
-            <h4 class="hide">
-                <span class="text">Artsy.</span>
-            </h4>
+    <div class="slider"></div> 
+
+    <!-- CSS Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="lds-ellipsis">
+                LOADING...
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </div>
-    <div class="slider"></div>
     
     <!-- custom mouse-->
     <div class="cursor-effect"></div>
@@ -61,15 +60,14 @@
              </div>
          </div>
         <a href="index.html" class="logo">
-            <!-- <h2>Mitolu<span>.</span></h2> -->
             <img src="./assets/img/favicon.svg" alt="">
         </a>
-        <div class="menu-toggler">
+        <!-- <div class="menu-toggler">
             <div class="bar half start"></div>
             <div class="bar"></div>
             <div class="bar half end"></div>
-        </div>
-        <nav class="top-nav">
+        </div> -->
+        <!-- <nav class="top-nav">
             <ul class="nav-list">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -77,19 +75,20 @@
                 <li class="nav-item"><a href="#projects" class="nav-link">Portfolio</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
+        <div class="inner">
+            <span>i</span>
+            <h1>Hello 😊</h1>
+            <p>
+                Thanks for visiting my Portfolio website! If you like what you see and you need me to work on a product, send me a <a href="#contact">message</a>
+            </p>
+            
+        </div>
         <div class="landing-text">
             <h1>Israel Mitolu</h1>
             <h5>Front-End Web Developer</h5>
         </div>
-        <div class="scrolldown">
-            <div class="mouse">
-                <span></span>
-            </div>
-            <div class="arrow">
-                <span></span>
-            </div>
-        </div>
+        
     </header>
 
     <main>
@@ -133,7 +132,7 @@
                     <div class="service-item-border"></div>
                     <img src="./assets/img/code.svg" alt="">
                     <h5>Responsive</h5>
-                    <p>Looks good on all mobile devices.</p>
+                    <p>Looks brilliant on all mobile devices.</p>
                 </div>
                 <div class="service-item">
                     <div class="service-item-border"></div>
@@ -226,6 +225,8 @@
                 </div>
             </div>
         </div>
+        
+
     </section>
 
     <!--Contacts-->
@@ -265,7 +266,7 @@
             <div class="footer-links">
                 <p><a href="https://twitter.com/israelmitolu">TW</a></p>
                 <p><a href="https://github.com/israelmitolu">GH</a></p>
-                <p><a href="https://linkedin.com/in/israelmitolu">LN</a></p>
+                <p><a href="https://linkedin.com/in/israeloyetunji">LN</a></p>
                 <p><a href="https://codepen.io/israelmitolu">CP</a></p>
             </div>
         </div>
@@ -274,6 +275,7 @@
 </footer>
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
     integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
     crossorigin="anonymous"></script>
