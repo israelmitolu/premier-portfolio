@@ -1,13 +1,10 @@
   //===== Preloader
 
-  $(".preloader").delay(1400).fadeOut(1450);
+  $(".preloader").delay(1200).fadeOut(1450);
 
 //Getting dom elements
 let mouseCursor = document.querySelector('.cursor-effect');
-let ctaLinks = document.querySelectorAll('.about-content a');
-let menuToggle = document.querySelector('.menu-toggler');
-let topNav = document.querySelector(".inner");
-let navLink = document.querySelector(".top-nav,open .nav-link");
+let ctaLinks = document.querySelectorAll('.about-content a, .footer-links a');
 
 
 //  Mouse effect
@@ -28,34 +25,18 @@ ctaLinks.forEach(link =>{
 })
 
 
-
-//Toggle Body Scroll
-// function toggleBodyScrolling(){
-//     document.body.classList.toggle("hide-scrolling");
-// }
-
-// Toggle menu
-menuToggle.addEventListener ('click', ()=>{
-    menuToggle.classList.toggle("open");
-    topNav.classList.toggle("open");
-});
-navLink.addEventListener ('click', ()=>{
-    menuToggle.classList.toggle("open");
-    topNav.classList.toggle("open");
-})
-
-
-
 //GSAP animations
 const tl = gsap.timeline({
     defaults: { ease: "power1.out" }
 });
 
-tl.to('.text', { y: "0%", duration: 1, stagger: 0.1 });
-tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
-tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 
-tl.fromTo('.landing-text h6', {opacity: 0}, {opacity: 1, duration:1});
-tl.fromTo('.landing-text h1', {opacity: 0}, {opacity: 1, duration:1}, "-=.8");
+tl.fromTo('.landing-text h1', {opacity: 0}, {opacity: 1, duration:1, stagger: .1});
+tl.fromTo('.landing-text h5', {opacity: 0}, {opacity: 1, duration:1});
+tl.fromTo('.effect-1', {opacity: 0}, {opacity: 1, duration:1});
+tl.fromTo('.effect-2', {opacity: 0}, {opacity: 1, duration:1});
+tl.fromTo('.effect-3', {opacity: 0}, {opacity: 1, duration:1});
+tl.fromTo('.effect-4', {opacity: 0}, {opacity: 1, duration:1});
+tl.fromTo('.inner', {opacity: 0}, {opacity: 1, duration:1}, "-=1");
 
 

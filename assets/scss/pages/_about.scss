@@ -22,7 +22,7 @@
       flex: 1;
       margin-right: 2.5rem;
       img {
-        width: 550px;
+        width: 510px;
         height: auto;
         object-fit: cover;
       }
@@ -35,6 +35,10 @@
       p {
         margin-top: 5rem;
         text-align: left;
+        a {
+          font-weight: 700;
+          color: $mainColor;
+        }
       }
     }
   }

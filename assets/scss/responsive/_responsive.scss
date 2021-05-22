@@ -26,7 +26,7 @@
   .services-heading,
   .contact-title {
     h2 {
-      font-size: 2rem !important;
+      font-size: 1.5rem !important;
     }
   }
   .services {
@@ -120,10 +120,14 @@
     left: 5rem !important;
   }
   .inner {
-    top: 4rem !important;
+    top: 1rem !important;
+    max-width: 220px !important;
+    padding: 1rem;
+    span {
+      display: none;
+    }
   }
   .more-about {
-    // padding: 2rem 2.5rem !important;
     &-content {
       flex-direction: column;
       flex-wrap: wrap;
@@ -148,11 +152,20 @@
   .profile-img {
     max-width: 400px;
   }
-  .services-heading {
-    font-size: 1.2rem;
+  .services-heading h2 {
+    font-size: 1.2rem !important;
   }
   .services-content p,
   .about-content {
     font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .services-heading h2 {
+    font-size: 1rem !important;
+  }
+  .project-box {
+    padding: 1.4rem !important;
   }
 }
