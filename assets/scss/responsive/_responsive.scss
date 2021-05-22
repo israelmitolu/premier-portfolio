@@ -115,6 +115,25 @@
     margin-bottom: 5em;
     margin-right: -6em !important;
   }
+  .effect-3 {
+    top: 12rem !important;
+    left: 5rem !important;
+  }
+  .inner {
+    top: 4rem !important;
+  }
+  .more-about {
+    // padding: 2rem 2.5rem !important;
+    &-content {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &-img,
+    &-text {
+      width: 100% !important;
+      margin: 1rem 0 2.5rem;
+    }
+  }
 }
 
 @media screen and (max-width: 350px) {
