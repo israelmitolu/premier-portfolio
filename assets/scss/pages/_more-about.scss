@@ -10,12 +10,12 @@
     text-transform: uppercase;
     margin: 2rem 0 5rem;
     span {
-      color: $mainColor;
+      color: $secondColor;
     }
   }
-  container,
   &-content {
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     width: 100%;
     justify-content: space-between;
@@ -24,6 +24,7 @@
     width: 40%;
     height: auto;
     padding: 0 15px;
+    user-select: none;
     max-width: 400px;
   }
   &-text {
@@ -82,8 +83,6 @@
           color: $mainColor;
           opacity: 1;
           cursor: crosshair;
-
-          cursor: auto;
           &::before {
             width: 100%;
             background-color: $mainColor;
@@ -96,6 +95,7 @@
 
 .tab-content {
   padding: 40px 0;
+  display: none;
   .timeline {
     position: relative;
 
@@ -132,16 +132,20 @@
       }
 
       h4 {
-        font-size: 1.2rem;
-        margin: 0 10px;
+        font-size: 1.1rem;
+        margin: 0 0 10px;
 
         span {
           font-weight: 400;
+          font-style: italic;
         }
       }
       &:last-child {
         margin-bottom: 0;
       }
     }
+  }
+  &.active {
+    display: block;
   }
 }

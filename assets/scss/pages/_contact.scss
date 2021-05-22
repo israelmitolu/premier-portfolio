@@ -1,5 +1,6 @@
 .contact {
   background: $dark;
+  padding-top: 4rem;
   &-title {
     display: flex;
     flex-direction: column;
@@ -18,10 +19,7 @@
     }
   }
   .container {
-    min-height: 100vh;
-    min-height: calc(var(--vh, 1vh) * 100);
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 60px 150px 40px;

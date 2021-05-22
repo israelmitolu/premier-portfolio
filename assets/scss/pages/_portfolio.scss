@@ -112,7 +112,7 @@
   &:hover {
     background: none;
     background-color: $dark;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
   }
   &:hover img,
   h3,
@@ -120,6 +120,6 @@
     filter: invert(1);
   }
   &:hover:after {
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
   }
 }
