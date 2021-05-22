@@ -31,12 +31,12 @@ const tl = gsap.timeline({
 });
 
 
-tl.fromTo('.landing-text h1', {opacity: 0}, {opacity: 1, duration:1, stagger: .1});
+tl.fromTo('.landing-text h1', {opacity: 0}, {opacity: 1, duration:1, stagger: .5});
 tl.fromTo('.landing-text h5', {opacity: 0}, {opacity: 1, duration:1});
 tl.fromTo('.effect-1', {opacity: 0}, {opacity: 1, duration:1});
 tl.fromTo('.effect-2', {opacity: 0}, {opacity: 1, duration:1});
 tl.fromTo('.effect-3', {opacity: 0}, {opacity: 1, duration:1});
 tl.fromTo('.effect-4', {opacity: 0}, {opacity: 1, duration:1});
-tl.fromTo('.inner', {opacity: 0}, {opacity: 1, duration:1}, "-=1");
+tl.fromTo('.inner', {opacity: 0}, {opacity: 1, duration:.7}, "-=1");
 
 
