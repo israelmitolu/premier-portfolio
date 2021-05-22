@@ -1,10 +1,12 @@
+  //===== Preloader
+
+  $(".preloader").delay(1400).fadeOut(1450);
 
 //Getting dom elements
-let mouseCursor = document.querySelector('.cursor-effect'
-);
+let mouseCursor = document.querySelector('.cursor-effect');
 let ctaLinks = document.querySelectorAll('.about-content a');
 let menuToggle = document.querySelector('.menu-toggler');
-let topNav = document.querySelector(".top-nav");
+let topNav = document.querySelector(".inner");
 let navLink = document.querySelector(".top-nav,open .nav-link");
 
 
@@ -55,3 +57,5 @@ tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 
 tl.fromTo('.landing-text h6', {opacity: 0}, {opacity: 1, duration:1});
 tl.fromTo('.landing-text h1', {opacity: 0}, {opacity: 1, duration:1}, "-=.8");
+
+
