@@ -188,13 +188,13 @@
 
   &:hover {
     clip-path: circle(75%);
-    // background: #c300ff;
     background: linear-gradient(to bottom left, #34e89e, #0f3443);
   }
 
   span {
     float: right;
     color: $white;
+    font-style: italic;
     font-weight: bold;
     transition: color 0.5s;
     position: relative;

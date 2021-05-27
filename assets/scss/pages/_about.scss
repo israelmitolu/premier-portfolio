@@ -12,7 +12,7 @@
       margin-bottom: 3rem;
       h2 {
         font-size: 3rem;
-        opacity: 0.8;
+        opacity: 1;
         span {
           color: $mainColor;
         }
@@ -21,6 +21,7 @@
     .profile-img {
       flex: 1;
       margin-right: 2.5rem;
+      z-index: 100;
       img {
         width: 510px;
         height: auto;

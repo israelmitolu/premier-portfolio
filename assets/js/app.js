@@ -30,13 +30,17 @@ const tl = gsap.timeline({
     defaults: { ease: "power1.out" }
 });
 
+tl.to('.layer-1', {y: '-100vh', delay: .1});
+tl.to('.layer-2', {y: '-100vh', delay: .2});
+tl.to('.layer-3', {y: '-100vh', delay: .3});
+tl.to('.overlay', {y: '-100vh', delay: .6});
 
-tl.fromTo('.landing-text h1', {opacity: 0}, {opacity: 1, duration:1, stagger: .5});
+tl.fromTo('.landing-text h1', {opacity: 0}, {opacity: 1, duration:.5, stagger: .5});
 tl.fromTo('.landing-text h5', {opacity: 0}, {opacity: 1, duration:1});
 tl.fromTo('.effect-1', {opacity: 0}, {opacity: 1, duration:1});
 tl.fromTo('.effect-2', {opacity: 0}, {opacity: 1, duration:1});
 tl.fromTo('.effect-3', {opacity: 0}, {opacity: 1, duration:1});
 tl.fromTo('.effect-4', {opacity: 0}, {opacity: 1, duration:1});
-tl.fromTo('.inner', {opacity: 0}, {opacity: 1, duration:.7}, "-=1");
+tl.fromTo('.inner', {opacity: 0}, {opacity: 1, duration:.3}, "-=1");
 
 
