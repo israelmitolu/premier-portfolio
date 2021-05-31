@@ -2,10 +2,10 @@
   header {
     .landing-text {
       h1 {
-        font-size: 8rem;
+        padding: 3rem !important;
       }
       h6 {
-        font-size: 0.8rem;
+        font-size: 0.8em;
       }
     }
     .nav-list {
@@ -29,18 +29,38 @@
       font-size: 1.5rem !important;
     }
   }
-  .services {
-    margin-top: 10rem;
-  }
+
   .footer-links:nth-child(1) {
     margin-right: 5em !important;
+  }
+  .more-about {
+    &-content {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &-img,
+    &-text {
+      width: 100% !important;
+      margin: 2rem auto;
+    }
+  }
+  .cursor-effect {
+    display: none;
+  }
+  .about .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    .profile-img {
+      width: 70%;
+      margin-bottom: 2.5rem;
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
   .landing-text h1 {
     font-size: 5rem !important;
-    padding: 2rem !important;
+    padding: 2rem;
   }
   .nav-list {
     margin-top: -1rem !important;
@@ -56,10 +76,11 @@
     height: 1rem;
   }
   .about {
+    margin-top: 9rem !important;
     .container {
       flex-direction: column;
       .profile-img {
-        margin: 0 0 4rem 0;
+        margin: 0 2rem 4rem 1rem;
       }
     }
   }
@@ -96,19 +117,17 @@
     font-size: 0.9rem !important;
     margin: 0px 0 60px !important;
   }
-  .about-content p {
-    margin-top: 0rem !important;
-  }
   .services {
-    margin-top: 10rem !important;
-    padding: 6rem 2rem;
+    margin-top: 6rem !important;
+    padding: 4rem 2rem;
   }
   .about-content {
-    font-size: 0.9rem !important;
+    p {
+      margin-top: 0rem !important;
+      font-size: 0.9rem !important;
+    }
   }
-  .cursor-effect {
-    display: none;
-  }
+
   .contact-title {
     padding: 6rem 2rem 2rem 6rem !important;
   }
@@ -126,17 +145,6 @@
     padding: 1rem;
     span {
       display: none;
-    }
-  }
-  .more-about {
-    &-content {
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    &-img,
-    &-text {
-      width: 100% !important;
-      margin: 1rem 0 2.5rem;
     }
   }
 }

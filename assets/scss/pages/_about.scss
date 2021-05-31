@@ -1,6 +1,6 @@
 .about {
   margin-top: 13rem;
-  padding: 6rem 2rem 2rem;
+  padding: 2rem 2rem;
   .container {
     display: flex;
     align-items: center;
@@ -13,15 +13,13 @@
       h2 {
         font-size: 3rem;
         opacity: 1;
-        span {
-          color: $mainColor;
-        }
       }
     }
     .profile-img {
       flex: 1;
       margin-right: 2.5rem;
       z-index: 100;
+      position: relative;
       img {
         width: 510px;
         height: auto;
@@ -36,6 +34,7 @@
       p {
         margin-top: 5rem;
         text-align: left;
+        color: $whiteLight;
         a {
           font-weight: 700;
           color: $mainColor;

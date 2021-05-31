@@ -93,7 +93,6 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  border: 1px solid $secondColor;
   transform: translate(-50%, -50%);
   pointer-events: none;
   position: absolute;
@@ -101,10 +100,11 @@
   z-index: 99;
   backdrop-filter: invert(1);
 }
+
 .link-grow {
   transform: scale(2);
   transform-origin: 100% 100%;
-  background: rgba(186, 232, 232, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 ///////Shapes
 .effect-wrap {
@@ -175,12 +175,12 @@
 }
 
 .inner {
-  background: $mainColor;
+  background: #34e89e;
   border-radius: 10px;
   max-width: 250px;
   clip-path: circle(10% at 83% 18%);
   padding: 2rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.6s ease-in-out;
   position: absolute;
   top: 0.5rem;
   right: 2rem;

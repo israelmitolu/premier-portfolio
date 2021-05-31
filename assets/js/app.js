@@ -1,10 +1,10 @@
-  //===== Preloader
+  //Preloader
 
   $(".preloader").delay(1200).fadeOut(1450);
 
 //Getting dom elements
 let mouseCursor = document.querySelector('.cursor-effect');
-let ctaLinks = document.querySelectorAll('.about-content a, .footer-links a');
+let ctaLinks = document.querySelectorAll('.about-content a, .footer-links a, .more-about a');
 
 
 //  Mouse effect
@@ -29,11 +29,6 @@ ctaLinks.forEach(link =>{
 const tl = gsap.timeline({
     defaults: { ease: "power1.out" }
 });
-
-tl.to('.layer-1', {y: '-100vh', delay: .1});
-tl.to('.layer-2', {y: '-100vh', delay: .2});
-tl.to('.layer-3', {y: '-100vh', delay: .3});
-tl.to('.overlay', {y: '-100vh', delay: .6});
 
 tl.fromTo('.landing-text h1', {opacity: 0}, {opacity: 1, duration:.5, stagger: .5});
 tl.fromTo('.landing-text h5', {opacity: 0}, {opacity: 1, duration:1});
