@@ -178,3 +178,8 @@
     padding: 1.4rem !important;
   }
 }
+@media screen and (max-width: 360px) {
+  .service-item p {
+    font-size: 0.65rem !important;
+  }
+}
