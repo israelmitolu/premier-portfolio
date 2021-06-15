@@ -21,7 +21,8 @@ h6 {
 body {
   font-size: 10px;
   line-height: 1.6;
-  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: $white;
   min-height: 100vh;
@@ -52,10 +53,11 @@ button {
 }
 
 //Section styling
-main {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
+
+section {
+  min-height: 100vh;
 }
+
 .section-title {
   padding: 0 15px;
   width: 100%;
