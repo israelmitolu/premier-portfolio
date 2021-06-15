@@ -56,8 +56,8 @@ function fadeOut(){
     });
     TweenMax.to(".slider-2", 2, {
         y: "-100%",
-        delay: 1.7,
-        ease: Expo.easeInOut
+        delay: 1.4,
+        ease: Power2.easeInOut
     });
     TweenMax.to(".intro", 2,{
         y:"-100%",
