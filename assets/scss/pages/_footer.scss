@@ -1,10 +1,10 @@
 .footer {
-  background: $dark;
+  background: var(--bg);
   padding: 8rem 5rem 5rem;
   position: relative;
   z-index: 1;
   hr {
-    border-color: $whiteLight;
+    border-color: var(--whiteLight);
     border-width: 1px;
     margin-bottom: 4rem;
     opacity: 0.4;
@@ -19,7 +19,7 @@
       margin-bottom: 15px;
     }
     .link-container {
-      color: $whiteLight;
+      color: var(--whiteLight);
       display: flex;
       flex-wrap: wrap;
       .footer-links {
@@ -37,14 +37,14 @@
           margin-bottom: 16px;
           a:hover {
             transition: 0.3s;
-            color: $mainColor;
+            color: var(--mainColor);
           }
         }
       }
     }
   }
   &-copy {
-    color: $whiteLight;
+    color: var(--whiteLight);
     padding: 140px 0 0;
     text-align: right;
     font-size: 1rem;

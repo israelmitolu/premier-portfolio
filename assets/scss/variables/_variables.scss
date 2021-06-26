@@ -1,8 +1,25 @@
 //Variables
-$mainColor: #34a3a3;
-$secondColor: #bae8e8;
-$thirdColor: #27496d;
-$white: #fbfffe;
-$dark: black;
-$darkBlue: #0b0b0f;
-$whiteLight: #c8c8c8;
+html {
+  --mainColor: #34a3a3;
+  --secondColor: #bae8e8;
+  --thirdColor: #27496d;
+  --pink: #fb839e;
+  --green-alt: #06d79c;
+  --purple: #8a49ff;
+  --bg: black;
+  --darkBlue: #0b0b0f;
+  --white: white;
+  --whiteLight: #ffffffcc;
+}
+html[data-theme="light"] {
+  --mainColor: #d63c2f;
+  --secondColor: #b5837f;
+  --thirdColor: #a1552a;
+  --pink: #8fc754;
+  --green-alt: #a31536;
+  --purple: #cca227;
+  --bg: #fcfcfc;
+  --darkBlue: #f5f5f7;
+  --white: #000000a1;
+  --whiteLight: #000000c7;
+}

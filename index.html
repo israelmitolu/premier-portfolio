@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -34,7 +34,7 @@
 </head>
 
 <body class="body-wrap">
-    <div class="intro">
+    <!-- <div class="intro">
         <div class="intro-text">
             <h2 class="hide">
                 <span class="text">Curating innovations</span>
@@ -49,7 +49,7 @@
         <button class="intro-btn" onclick="fadeOut()">EXPLORE</button>
     </div>
     <div class="slider"></div>
-    <div class="slider-2"></div>
+    <div class="slider-2"></div> -->
 
     <!-- custom mouse-->
     <div class="cursor-effect"></div>
@@ -58,6 +58,7 @@
     <div class="content">
         <!-- Header Section -->
         <header>
+            
             <!-- Shapes -->
             <div class="effect-wrap">
                 <div class="effect effect-1"></div>
@@ -108,12 +109,15 @@
                     Thanks for visiting my Portfolio website! If you like what you see and you need me to work on a
                     product, send me a <a href="#contact">message</a>
                 </p>
-
             </div>
-            <div class="landing-text">
 
+            <div class="toggle-container">
+                <input type="checkbox" id="switch" name="theme" /><label class="toggle" for="switch">Toggle</label>
+            </div>
+
+            <div class="landing-text">
                 <h1>Israel Mitolu</h1>
-                <h5>Front-End Web Developer</h5>
+                <h5>I build engaging web experiences</h5>
             </div>
 
         </header>
@@ -168,15 +172,14 @@
                             <div class="service-item-border"></div>
                             <img src="./assets/img/code.svg" alt="">
                             <h5>Web Development</h5>
-                            <p>I use various web technologies to develop attractive websites which converts visitors to
-                                customers. I develop creative and responsive website layouts.</p>
+                            <p>I use various web technologies to develop attractive,creative and responsive website layouts websites which converts visitors customers</p>
                         </div>
                         <div class="service-item">
                             <div class="service-item-border"></div>
                             <img src="./assets/img/graphics_design.svg" alt="">
                             <h5>Graphics Design</h5>
-                            <p>I create captivating and hign quality graphics and logo designs. User readability,
-                                coupled with best design practices are implemented also.</p>
+                            <p>I create captivating and high quality graphics and logo designs where user readability,
+                                coupled with best design practices are prioritized</p>
                         </div>
                     </div>
                 </div>
@@ -286,7 +289,7 @@
                         Got a question, proposal or project or want to work <br />
                         together on something? Feel free to reach out.
                     </div>
-                    <form action="POST" data-netlify="true">
+                    <form action='POST' data-netlify='true'>
                         <div class="input-row">
                             <div class="side"><label for="name">Your Name</label><input placeholder="Enter Your name"
                                     name="name" id="name" type="text" required="" value="" /></div>

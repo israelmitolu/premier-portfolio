@@ -40,10 +40,10 @@
       p {
         margin-top: 5rem;
         text-align: left;
-        color: $white;
+        color: var(--white);
         a {
           font-weight: 700;
-          color: $mainColor;
+          color: var(--mainColor);
         }
       }
     }
@@ -67,7 +67,7 @@
       left: 0;
       height: 1px;
       width: 0%;
-      background-color: $secondColor;
+      background-color: var(--secondColor);
       transition: width 0.3s ease;
     }
     &:hover::before {

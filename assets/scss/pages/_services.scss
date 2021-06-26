@@ -1,7 +1,7 @@
 .services {
   margin-top: 6rem;
   padding: 6rem 3.5rem;
-  background: $dark;
+  background: var(--bg);
   .services-content {
     text-align: center;
     .services-heading {
@@ -14,7 +14,7 @@
         opacity: 1;
         margin: 1rem 0 6rem;
         span {
-          color: $mainColor;
+          color: var(--mainColor);
         }
       }
     }
@@ -45,13 +45,13 @@
         height: 75px;
       }
       h5 {
-        color: $white;
+        color: var(--white);
         letter-spacing: 1px;
         font-size: 1.2rem;
         margin: 10px 0;
       }
       p {
-        color: $whiteLight;
+        color: var(--whiteLight);
         font-size: 0.9rem;
       }
       .service-item-border {
@@ -61,7 +61,7 @@
         left: 50%;
         top: 0px;
         transform: translateX(-50%);
-        background-color: $mainColor;
+        background-color: var(--mainColor);
         border-radius: 0px 0px 10px 10px;
       }
     }

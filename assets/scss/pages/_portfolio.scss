@@ -3,7 +3,7 @@
   padding: 6rem;
   h5 {
     text-transform: uppercase;
-    color: $whiteLight;
+    color: var(--whiteLight) !important;
     font-size: 0.8rem;
     letter-spacing: 3px;
   }
@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-gap: 4rem;
-    color: $dark;
+    color: var(--bg);
     margin-top: 6rem;
   }
 
@@ -30,8 +30,8 @@
     position: relative;
 
     &:hover {
-      border: solid 2px $white;
-      color: $white;
+      border: solid 2px var(--white);
+      color: var(--white);
     }
   }
   .project-box:nth-child(1):hover:after {
@@ -92,14 +92,14 @@
       font-size: 1.5rem;
       font-weight: 800;
       text-transform: capitalize;
-      color: #000;
+      color: var(--white);
     }
   }
 }
 
 .project-box {
-  background: $dark;
-  border: 1px solid $white;
+  background: var(--bg);
+  border: 1px solid var(--white);
   &:after {
     content: "";
     position: absolute;
@@ -111,7 +111,7 @@
   }
   &:hover {
     background: none;
-    background-color: $dark;
+    background-color: var(--bg);
     transition: all 0.2s ease;
   }
   &:hover img,

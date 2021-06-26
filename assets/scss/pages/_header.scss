@@ -1,7 +1,7 @@
 header {
   width: 100%;
   height: 100vh;
-  background: $darkBlue;
+  background: var(--darkBlue);
   position: relative;
   .landing-text {
     position: absolute;
@@ -16,7 +16,7 @@ header {
       font-size: 10rem;
       font-family: "the_historia_demoregular", sans-serif;
       padding: 1rem;
-      background: linear-gradient(to top, $mainColor, $secondColor);
+      background: linear-gradient(to top, var(--mainColor), var(--secondColor));
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -34,7 +34,7 @@ header {
   top: 1rem;
   left: 2rem;
   width: 4rem;
-  background-color: rgba(11, 11, 15, 0.7);
+  background-color: rgba(var(--bg), 0.75);
   padding: 0.3rem;
   z-index: 101;
   user-select: none;
