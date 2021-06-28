@@ -84,7 +84,7 @@
         color: var(--mainColor);
         &:hover {
           color: var(--white);
-          background: var(--thirdColor);
+          background: var(--mainColor);
           transition: 0.3s all ease;
         }
       }

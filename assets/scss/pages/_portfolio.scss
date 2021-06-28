@@ -78,9 +78,10 @@
       // tab-port
       width: 30%;
     }
-    a img {
+    a ion-icon {
       width: 20px;
       height: 20px;
+      color: var(--white);
     }
   }
   &-box__content {
@@ -92,14 +93,19 @@
       font-size: 1.5rem;
       font-weight: 800;
       text-transform: capitalize;
-      color: var(--white);
+      color: var(--whiteLight);
+    }
+    h5 {
+      color: var(--secondColor);
+      font-size: 1em;
+      font-weight: 400;
     }
   }
 }
 
 .project-box {
-  background: var(--bg);
-  border: 1px solid var(--white);
+  background: var(--darkBlue);
+  border: 1px solid var(--secondColor);
   &:after {
     content: "";
     position: absolute;
@@ -114,11 +120,11 @@
     background-color: var(--bg);
     transition: all 0.2s ease;
   }
-  &:hover img,
-  h3,
-  h5 {
-    filter: invert(1);
-  }
+  // &:hover img,
+  // h3,
+  // h5 {
+  //   filter: invert(1);
+  // }
   &:hover:after {
     transition: all 0.2s ease;
   }

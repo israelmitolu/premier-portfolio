@@ -13,15 +13,17 @@ header {
     z-index: 10;
     user-select: none;
     h1 {
-      font-size: 10rem;
-      font-family: "the_historia_demoregular", sans-serif;
+      font-size: 9rem;
+      // font-family: "the_historia_demoregular", sans-serif;
+      font-family: "flood-std", sans-serif;
+
       padding: 1rem;
       background: linear-gradient(to top, var(--mainColor), var(--secondColor));
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
 
-      letter-spacing: 5px;
+      letter-spacing: -5px;
     }
     h5 {
       font-size: 1rem;
@@ -29,7 +31,7 @@ header {
     }
   }
 }
-.logo {
+.logo img {
   position: fixed;
   top: 1rem;
   left: 2rem;

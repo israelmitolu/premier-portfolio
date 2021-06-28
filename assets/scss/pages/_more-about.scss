@@ -39,7 +39,7 @@
       display: flex;
       flex-wrap: wrap;
       .skill-item {
-        background: rgba($color: #000000, $alpha: 0.75);
+        background: rgba($color: var(--darkBlue), $alpha: 0.7);
         border: 1px solid var(--mainColor);
         padding: 5px 15px;
         margin: 0 10px 10px 0;

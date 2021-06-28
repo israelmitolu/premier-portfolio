@@ -192,7 +192,11 @@
 
   &:hover {
     clip-path: circle(75%);
-    background: linear-gradient(to bottom left, var(--green-alt), var(--dark));
+    background: linear-gradient(
+      to bottom left,
+      var(--green-alt),
+      var(--darkBlue)
+    );
   }
 
   span {

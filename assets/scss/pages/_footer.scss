@@ -19,7 +19,7 @@
       margin-bottom: 15px;
     }
     .link-container {
-      color: var(--whiteLight);
+      color: var(--thirdColor);
       display: flex;
       flex-wrap: wrap;
       .footer-links {
@@ -35,9 +35,12 @@
         }
         p {
           margin-bottom: 16px;
-          a:hover {
-            transition: 0.3s;
+          a {
             color: var(--mainColor);
+            &:hover {
+              transition: 0.3s;
+              color: var(--thirdColor);
+            }
           }
         }
       }

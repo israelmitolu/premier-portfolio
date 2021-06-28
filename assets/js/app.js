@@ -22,25 +22,6 @@ ctaLinks.forEach(link =>{
 
 
 //GSAP animations
-const tl = gsap.timeline({
-    defaults: { ease: "power1.out" }
-});
-
-tl.to('.text', {
-    y: "0%",
-    duration: 1,
-    stagger: .4
-})
-
-tl.fromTo('.landing-text h1', {opacity: 0}, {opacity: 1, duration:.5, stagger: .5});
-tl.fromTo('.landing-text h5', {opacity: 0}, {opacity: 1, duration:1});
-tl.fromTo('.effect-1', {opacity: 0}, {opacity: 1, duration:1});
-tl.fromTo('.effect-2', {opacity: 0}, {opacity: 1, duration:1});
-tl.fromTo('.effect-3', {opacity: 0}, {opacity: 1, duration:1});
-tl.fromTo('.effect-4', {opacity: 0}, {opacity: 1, duration:1});
-tl.fromTo('.inner', {opacity: 0}, {opacity: 1, duration:.3}, "-=1");
-
-
 function fadeOut(){
     TweenMax.to(".intro-btn", 1, {
         opacity: 0,
@@ -69,9 +50,29 @@ function fadeOut(){
         ease: Power2.easeInOut
     })
 }
+///Timeline
+const tl = gsap.timeline({
+    defaults: { ease: "power1.out" },
+});
 
+tl.to('.text', {
+    y: "0%",
+    duration: 1,
+    stagger: .4
+})
+tl.from(".services-heading h2", {
+    y: 300,
+    opacity: 0,
+    duration: 1
+}, "-=1")
 
-
+tl.fromTo('.landing-text h1', {opacity: 0}, {opacity: 1, duration:.5, stagger: .5});
+tl.fromTo('.landing-text h5', {opacity: 0}, {opacity: 1, duration:1});
+tl.fromTo('.effect-1', {opacity: 0}, {opacity: 1, duration:1});
+tl.fromTo('.effect-2', {opacity: 0}, {opacity: 1, duration:1});
+tl.fromTo('.effect-3', {opacity: 0}, {opacity: 1, duration:1});
+tl.fromTo('.effect-4', {opacity: 0}, {opacity: 1, duration:1});
+tl.fromTo('.inner', {opacity: 0}, {opacity: 1, duration:.3}, "-=1");
 
 /////Dark theme toggle
 var checkbox = document.querySelector('input[name=theme]');
@@ -90,5 +91,5 @@ let trans = () => {
     document.documentElement.classList.add('transition');
     window.setTimeout(() => {
         document.documentElement.classList.remove('transition')
-    }, 1000)
+    }, 1200)
 }

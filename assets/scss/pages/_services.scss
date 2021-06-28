@@ -41,8 +41,10 @@
       padding: 20px 25px;
       margin: 20px;
       position: relative;
-      img {
-        height: 75px;
+      ion-icon {
+        width: 55px;
+        height: 55px;
+        color: var(--mainColor);
       }
       h5 {
         color: var(--white);
@@ -53,16 +55,6 @@
       p {
         color: var(--whiteLight);
         font-size: 0.9rem;
-      }
-      .service-item-border {
-        width: 100px;
-        height: 6px;
-        position: absolute;
-        left: 50%;
-        top: 0px;
-        transform: translateX(-50%);
-        background-color: var(--mainColor);
-        border-radius: 0px 0px 10px 10px;
       }
     }
   }

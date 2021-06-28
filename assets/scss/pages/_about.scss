@@ -39,6 +39,7 @@
 
       p {
         margin-top: 5rem;
+        font-weight: 400;
         text-align: left;
         color: var(--white);
         a {
@@ -52,14 +53,14 @@
 .about-cta {
   text-align: center;
   margin: 2rem 0;
-  font-size: 0.9em;
+  font-size: 0.95em;
   span {
     margin-left: 10px;
   }
   a {
     font-weight: 800;
     position: relative;
-    color: #06d79c;
+    color: var(--green-alt);
     &::before {
       position: absolute;
       content: "";
@@ -75,7 +76,7 @@
     }
   }
   .exp-cta {
-    color: #fb839e;
+    color: var(--pink);
     margin-left: 10px;
   }
 }
