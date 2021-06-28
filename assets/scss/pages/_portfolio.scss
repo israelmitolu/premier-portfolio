@@ -104,8 +104,8 @@
 }
 
 .project-box {
-  background: var(--darkBlue);
-  border: 1px solid var(--secondColor);
+  background: var(--bg);
+  border: 1px solid var(--white);
   &:after {
     content: "";
     position: absolute;
@@ -117,7 +117,7 @@
   }
   &:hover {
     background: none;
-    background-color: var(--bg);
+    background-color: var(--darkBlue);
     transition: all 0.2s ease;
   }
   // &:hover img,

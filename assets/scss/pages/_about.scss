@@ -26,9 +26,10 @@
         height: auto;
         object-fit: cover;
         filter: grayscale(100%);
-        transition: 0.5s;
+        transition: 0.3s;
         &:hover {
           filter: none;
+          transform: scale(1.05);
         }
       }
     }
