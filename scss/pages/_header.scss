@@ -1,0 +1,43 @@
+header {
+  width: 100%;
+  height: 100vh;
+  background: var(--darkBlue);
+  position: relative;
+  .landing-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    user-select: none;
+    h1 {
+      font-size: 10rem;
+      font-family: "the_historia_demoregular", sans-serif;
+      // font-family: "flood-std", sans-serif;
+
+      padding: 1rem;
+      background: linear-gradient(to top, var(--mainColor), var(--secondColor));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      letter-spacing: 5px;
+    }
+    h5 {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+}
+.logo img {
+  position: fixed;
+  top: 1rem;
+  left: 2rem;
+  width: 4rem;
+  background-color: rgba(var(--bg), 0.75);
+  padding: 0.3rem;
+  z-index: 101;
+  user-select: none;
+}

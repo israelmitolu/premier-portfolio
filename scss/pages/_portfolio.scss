@@ -1,0 +1,131 @@
+.project {
+  grid-column: 2/14;
+  padding: 6rem;
+  h5 {
+    text-transform: uppercase;
+    color: var(--whiteLight) !important;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+  }
+  h2 {
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+  }
+
+  &-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-gap: 4rem;
+    color: var(--bg);
+    margin-top: 6rem;
+  }
+
+  &-box {
+    padding: 2rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    &:hover {
+      border: solid 2px var(--white);
+      color: var(--white);
+    }
+  }
+  .project-box:nth-child(1):hover:after {
+    outline: 2px solid lightblue;
+    background: lightblue;
+  }
+  .project-box:nth-child(2):hover:after {
+    background: lightcoral;
+    outline: 2px solid lightcoral;
+  }
+  .project-box:nth-child(3):hover:after {
+    background: lightcyan;
+    outline: 2px solid lightcyan;
+  }
+  .project-box:nth-child(4):hover:after {
+    background: lightgray;
+    outline: 2px solid lightgray;
+    .project-box__link {
+      width: min-content;
+    }
+  }
+  .project-box:nth-child(5):hover:after {
+    background: lightgreen;
+    outline: 2px solid lightgreen;
+    .project-box__link {
+      width: min-content;
+    }
+  }
+  .project-box:nth-child(6):hover:after {
+    background: lightskyblue;
+    outline: 2px solid lightskyblue;
+    .project-box__link {
+      width: min-content;
+    }
+  }
+
+  &-box__link {
+    align-self: flex-end;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: 56.25em) {
+      // tab-port
+      width: 30%;
+    }
+    a ion-icon {
+      width: 20px;
+      height: 20px;
+      color: var(--white);
+    }
+  }
+  &-box__content {
+    align-self: center;
+    h3 {
+      margin-bottom: 3rem;
+      letter-spacing: -0.5px;
+      line-height: 4rem;
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-transform: capitalize;
+      color: var(--whiteLight);
+    }
+    h5 {
+      color: var(--secondColor);
+      font-size: 1em;
+      font-weight: 400;
+    }
+  }
+}
+
+.project-box {
+  background: var(--bg);
+  border: 1px solid var(--white);
+  &:after {
+    content: "";
+    position: absolute;
+    width: 103%;
+    height: 101%;
+    top: 1rem;
+    right: 0.5rem;
+    z-index: -1;
+  }
+  &:hover {
+    background: none;
+    background-color: var(--darkBlue);
+    transition: all 0.2s ease;
+  }
+  // &:hover img,
+  // h3,
+  // h5 {
+  //   filter: invert(1);
+  // }
+  &:hover:after {
+    transition: all 0.2s ease;
+  }
+}

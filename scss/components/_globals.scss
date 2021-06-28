@@ -1,0 +1,69 @@
+//Global styling
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--white);
+  font-weight: 600;
+}
+body {
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: var(--white);
+  min-height: 100vh;
+  max-width: 100%;
+  background: var(--bg);
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondColor);
+  cursor: crosshair;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+}
+button {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+//Section styling
+
+section {
+  min-height: 100vh;
+}
+
+.section-title {
+  padding: 0 15px;
+  width: 100%;
+  margin-bottom: 40px;
+  h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+}
