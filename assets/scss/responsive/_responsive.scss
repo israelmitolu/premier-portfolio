@@ -58,9 +58,14 @@
 }
 
 @media screen and (max-width: 600px) {
-  .landing-text h1 {
-    font-size: 5rem !important;
-    padding: 2rem;
+  .landing-text {
+    h1 {
+      font-size: 5rem !important;
+      padding: 2rem;
+    }
+    h5 {
+      font-size: 0.85rem !important;
+    }
   }
   .nav-list {
     margin-top: -1rem !important;
