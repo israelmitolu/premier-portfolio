@@ -1,0 +1,55 @@
+.footer {
+  background: var(--bg);
+  padding: 8rem 5rem 5rem;
+  position: relative;
+  z-index: 1;
+  hr {
+    border-color: var(--whiteLight);
+    border-width: 1px;
+    margin-bottom: 4rem;
+    opacity: 0.4;
+  }
+  &-head {
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    h5 {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 15px;
+    }
+    .link-container {
+      color: var(--thirdColor);
+      display: flex;
+      flex-wrap: wrap;
+      .footer-links {
+        &:nth-child(1) {
+          margin-right: 15em;
+        }
+        &:nth-child(2) {
+          display: flex;
+          flex-direction: row;
+          p {
+            margin-left: 1.5rem;
+          }
+        }
+        p {
+          margin-bottom: 16px;
+          a {
+            color: var(--mainColor);
+            &:hover {
+              transition: 0.3s;
+              color: var(--thirdColor);
+            }
+          }
+        }
+      }
+    }
+  }
+  &-copy {
+    color: var(--whiteLight);
+    padding: 140px 0 0;
+    text-align: right;
+    font-size: 1rem;
+  }
+}

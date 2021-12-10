@@ -1,0 +1,25 @@
+//Variables
+html {
+  --mainColor: #34a3a3;
+  --secondColor: #bae8e8;
+  --thirdColor: #27496d;
+  --pink: #fb839e;
+  --green-alt: #06d79c;
+  --purple: #8a49ff;
+  --bg: black;
+  --darkBlue: #0b0b0f;
+  --white: white;
+  --whiteLight: #ffffffcc;
+}
+html[data-theme="light"] {
+  --mainColor: #39a2db;
+  --secondColor: #a2dbfa;
+  --thirdColor: #39a2db;
+  --pink: #ff94cc;
+  --green-alt: #a8dadc;
+  --purple: #a239ea;
+  --bg: #fff;
+  --darkBlue: #fcfcfc;
+  --white: #131313;
+  --whiteLight: #343a40;
+}

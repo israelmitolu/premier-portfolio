@@ -1,0 +1,190 @@
+@media screen and (max-width: 768px) {
+  header {
+    .landing-text {
+      h1 {
+        padding: 3rem !important;
+      }
+      h6 {
+        font-size: 0.8em;
+      }
+    }
+    .nav-list {
+      margin-top: 2.5rem;
+      flex-direction: column;
+      li {
+        margin: 1rem 0;
+        .nav-link {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .portfolio {
+    margin-top: 12rem;
+  }
+  .about-heading,
+  .services-heading,
+  .contact-title {
+    h2 {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  .footer-links:nth-child(1) {
+    margin-right: 5em !important;
+  }
+  .more-about {
+    &-content {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &-img,
+    &-text {
+      width: 100% !important;
+      margin: 2rem auto;
+    }
+  }
+  .cursor-effect {
+    display: none;
+  }
+  .about .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    .profile-img {
+      width: 90%;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .landing-text {
+    h1 {
+      font-size: 5rem !important;
+      padding: 2rem;
+    }
+    h5 {
+      font-size: 0.85rem !important;
+    }
+  }
+  .nav-list {
+    margin-top: -1rem !important;
+    .nav-link {
+      font-size: 3.5rem !important;
+    }
+  }
+
+  .menu-toggler {
+    top: 2.2rem;
+    right: 1rem;
+    width: 1.5rem;
+    height: 1rem;
+  }
+  .about {
+    margin-top: 9rem !important;
+    .container {
+      flex-direction: column;
+      .profile-img {
+        margin: 0 2rem 4rem 1rem;
+      }
+    }
+  }
+  .logo {
+    top: 2.2rem;
+    left: 1rem;
+    width: 4rem !important;
+    padding: 0.6rem 0.3rem !important;
+    h2 {
+      font-size: 1.2rem !important;
+    }
+  }
+  .project {
+    padding: 4em !important;
+  }
+  .contact .container {
+    padding: 0px 20px !important;
+    form {
+      width: 100% !important;
+      min-width: 0 !important;
+      .input-row {
+        flex-direction: column;
+        .side {
+          width: 100% !important;
+          margin-bottom: 50px;
+        }
+      }
+      .textarea {
+        margin-top: 0 !important;
+      }
+    }
+  }
+  .sub {
+    font-size: 0.9rem !important;
+    margin: 0px 0 60px !important;
+  }
+  .services {
+    margin-top: 6rem !important;
+    padding: 4rem 2rem;
+  }
+  .about-content {
+    p {
+      margin-top: 0rem !important;
+      font-size: 0.8rem !important;
+    }
+  }
+
+  .contact-title {
+    padding: 6rem 2rem 2rem 6rem !important;
+  }
+  .footer-links:nth-child(1) {
+    margin-bottom: 5em;
+    margin-right: -6em !important;
+  }
+  .effect-3 {
+    top: 12rem !important;
+    left: 5rem !important;
+  }
+  .inner {
+    top: 1rem !important;
+    max-width: 220px !important;
+    padding: 1rem;
+    span {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  header {
+    .landing-text {
+      flex-direction: column;
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+  .profile-img {
+    max-width: 400px;
+  }
+  .services-heading h2 {
+    font-size: 1.2rem !important;
+  }
+  .services-content p,
+  .about-content {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .services-heading h2 {
+    font-size: 1rem !important;
+  }
+  .project-box {
+    padding: 1.4rem !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .service-item p {
+    font-size: 0.67rem !important;
+  }
+}

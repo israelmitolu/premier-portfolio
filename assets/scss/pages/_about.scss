@@ -1,0 +1,83 @@
+.about {
+  margin-top: 13rem;
+  padding: 2rem 2rem;
+  position: relative;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .about-heading {
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 0;
+      margin-bottom: 3rem;
+      h2 {
+        font-size: 3rem;
+        opacity: 1;
+      }
+    }
+    .profile-img {
+      flex: 1;
+      margin-right: 2.5rem;
+      z-index: 100;
+      position: relative;
+      img {
+        width: 510px;
+        height: auto;
+        object-fit: cover;
+        filter: grayscale(100%);
+        transition: 0.3s;
+        &:hover {
+          filter: none;
+          transform: scale(1.05);
+        }
+      }
+    }
+    .about-content {
+      flex: 1;
+      font-size: 1rem;
+      line-height: 2;
+
+      p {
+        margin-top: 5rem;
+        font-weight: 300;
+        text-align: left;
+        color: var(--white);
+        a {
+          font-weight: 700;
+          color: var(--mainColor);
+        }
+      }
+    }
+  }
+}
+.about-cta {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 0.95em;
+  span {
+    margin-left: 10px;
+  }
+  a {
+    font-weight: 800;
+    position: relative;
+    color: var(--green-alt);
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 0%;
+      background-color: var(--secondColor);
+      transition: width 0.3s ease;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+  }
+  .exp-cta {
+    color: var(--pink);
+    margin-left: 10px;
+  }
+}
