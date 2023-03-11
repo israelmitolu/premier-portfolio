@@ -1,11 +1,14 @@
+@media screen and (max-width: 900px) {
+  .about {
+    padding: 2rem 2rem !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   header {
     .landing-text {
       h1 {
         padding: 3rem !important;
-      }
-      h6 {
-        font-size: 0.8em;
       }
     }
     .nav-list {
@@ -47,11 +50,12 @@
   .cursor-effect {
     display: none;
   }
+
   .about .container {
     flex-direction: column;
     flex-wrap: wrap;
     .profile-img {
-      width: 90%;
+      // width: 90%;
       margin-bottom: 2.5rem;
     }
   }
@@ -62,9 +66,6 @@
     h1 {
       font-size: 5rem !important;
       padding: 2rem;
-    }
-    h5 {
-      font-size: 0.85rem !important;
     }
   }
   .nav-list {
@@ -124,7 +125,7 @@
   }
   .services {
     margin-top: 6rem !important;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem !important;
   }
   .about-content {
     p {
