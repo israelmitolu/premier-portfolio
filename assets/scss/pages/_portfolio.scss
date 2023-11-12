@@ -34,6 +34,7 @@
       color: var(--white);
     }
   }
+
   .project-box:nth-child(1):hover:after {
     outline: 2px solid lightblue;
     background: lightblue;
@@ -111,6 +112,7 @@
 }
 
 .project-box {
+  position: relative;
   background: var(--bg);
   border: 1px solid var(--white);
   &:after {
@@ -134,5 +136,13 @@
   // }
   &:hover:after {
     transition: all 0.2s ease;
+  }
+
+  &__absolute-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
