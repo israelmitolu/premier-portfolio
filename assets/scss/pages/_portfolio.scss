@@ -49,7 +49,7 @@
   }
   .project-box:nth-child(4):hover:after {
     background: lightgray;
-    outline: 2px solid lightgray;
+    outline: 2px solid lightslategray;
     .project-box__link {
       width: min-content;
     }
@@ -71,6 +71,13 @@
   .project-box:nth-child(7):hover:after {
     background: lightseagreen;
     outline: 2px solid lightseagreen;
+    .project-box__link {
+      width: min-content;
+    }
+  }
+  .project-box:nth-child(8):hover:after {
+    background: lightpink;
+    outline: 2px solid lightpink;
     .project-box__link {
       width: min-content;
     }
