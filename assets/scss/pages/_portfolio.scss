@@ -26,7 +26,7 @@
     height: 18rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 3rem;
     position: relative;
 
     &:hover {
@@ -87,7 +87,7 @@
     align-self: flex-end;
     width: 25%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     @media only screen and (max-width: 56.25em) {
       // tab-port
@@ -104,7 +104,7 @@
     h3 {
       margin-bottom: 3rem;
       letter-spacing: -0.5px;
-      line-height: 3rem;
+      line-height: 2rem;
       font-size: 1.5rem;
       font-weight: 800;
       text-transform: capitalize;
