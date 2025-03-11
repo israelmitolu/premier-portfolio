@@ -18,12 +18,18 @@
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-gap: 4rem;
     color: var(--bg);
-    margin-top: 6rem;
+    margin: 6rem auto 0 auto;
+    max-width: 1720px;
+    width: 100%;
   }
 
   &-box {
     padding: 2rem;
     height: 18rem;
+    @media only screen and (max-width: 56.25em) {
+      // tab-port
+      height: 15rem;
+    }
     display: flex;
     flex-direction: column;
     gap: 3rem;
