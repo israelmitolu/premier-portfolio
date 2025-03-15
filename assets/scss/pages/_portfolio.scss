@@ -1,6 +1,8 @@
 .project {
-  grid-column: 2/14;
-  padding: 6rem;
+  // grid-column: 2/14;
+  max-width: 1480px;
+  margin: auto;
+  padding: 6rem 0;
   h5 {
     text-transform: uppercase;
     color: var(--whiteLight) !important;
@@ -27,8 +29,7 @@
     padding: 2rem;
     height: 18rem;
     @media only screen and (max-width: 56.25em) {
-      // tab-port
-      height: 15rem;
+      height: 18rem;
     }
     display: flex;
     flex-direction: column;
