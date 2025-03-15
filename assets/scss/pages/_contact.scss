@@ -1,5 +1,7 @@
 .contact {
   background: var(--bg);
+  max-width: 1480px;  
+  margin: 6rem auto 0 auto;
   padding-top: 4rem;
   &-title {
     display: flex;
@@ -22,7 +24,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 60px 150px 40px;
+    padding: 60px 0;
     .sub {
       text-align: center;
       line-height: 1.3;
